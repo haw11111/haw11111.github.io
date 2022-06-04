@@ -75,11 +75,13 @@
 
 p{
     font-family: roboto, Arial, sans-serif;
+    margin-top: 0rem;
 }
 
 h1, h2, h3, h4{
     font-family: lato, Helvetica, sans-serif;
     letter-spacing: 0.0325rem;
+    padding: 0.325rem;
 }
 
 h1{
@@ -90,7 +92,17 @@ h1{
 }
 
 .highlight{
+
+    display: inline-block;
     font-family: ultra, Georgia, sans-serif;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #fdffff;
+    background-color: #632e0f;
+    box-shadow: 5px 5px 4px -1px #888;
 }
 
 /* General Setup and Defaults*/
@@ -114,11 +126,13 @@ body {
 
 header{
     padding: 0.5rem 0rem 1rem 0rem;
+    text-align: center;
 }
 
 nav{
     margin-top: 3rem;
 }
+
 
 
 .main-section {
@@ -134,10 +148,36 @@ article{
 aside{
     grid-column: 2 / 3;
     grid-row: 1;
+    border-left: 1px solid #28234b;
+    padding-left: 0.75rem;
+    
+}
+
+
+
+aside p {
+    border-bottom: 1px solid #28234b;
+    padding: 1rem;
+    margin-left: .25rem;
+    margin-right: -2rem;
+    font-size: small;
+}
+
+
+aside h3 {
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    margin-right: -2rem;
+}
+
+aside img {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
 }
 
 .subsection {
     display: flex;
+    font-size: small;
 }
 
 /* Images and Figures */
@@ -163,4 +203,49 @@ figure{
 
 .subsection figure figcaption{
     padding: 0.5rem 0.5rem;
+}
+
+/* LINKS AND NAVIGATION */
+
+a {
+    text-decoration: none;
+}
+
+.nav{
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+nav{
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    font-size: 1.5rem;
+    font-family: lato, Arial, sans-serif;
+    color: #28234b;
+}
+
+
+nav{
+    border-top: 1px solid #28234b;
+    border-bottom: 1px solid #28234b;
+}
+
+
+button{
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: inline-block;
+    font-family: ultra, Georgia, sans-serif;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: #fdffff;
+    background-color: #4a4398;
+    box-shadow: 5px 5px 4px -1px #888;
+}
+
+footer p{
+    font-size: small;
 }
